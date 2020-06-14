@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5F73301-D8B3-45B3-82DE-21F07562A1DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>videoproject</RootNamespace>
+    <AssemblyName>videoproject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="allrented.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allrented.Designer.cs">
+      <DependentUpon>allrented.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer.Designer.cs">
+      <DependentUpon>customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerlist.Designer.cs">
+      <DependentUpon>customerlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customerrecordwise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerrecordwise.Designer.cs">
+      <DependentUpon>customerrecordwise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer_class.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issuemovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issuemovie.Designer.cs">
+      <DependentUpon>issuemovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issuemovie_class.cs" />
+    <Compile Include="movierecordwize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movierecordwize.Designer.cs">
+      <DependentUpon>movierecordwize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movies.Designer.cs">
+      <DependentUpon>movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movieslist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movieslist.Designer.cs">
+      <DependentUpon>movieslist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="moviesrental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moviesrental.Designer.cs">
+      <DependentUpon>moviesrental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movies_class.cs" />
+    <Compile Include="Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rentedout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rentedout.Designer.cs">
+      <DependentUpon>rentedout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="returnmovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="returnmovie.Designer.cs">
+      <DependentUpon>returnmovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="video_databaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>video_databaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="video_databaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>video_databaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="video_databaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>video_databaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="video_databaseDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>video_databaseDS.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="allrented.resx">
+      <DependentUpon>allrented.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer.resx">
+      <DependentUpon>customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerlist.resx">
+      <DependentUpon>customerlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerrecordwise.resx">
+      <DependentUpon>customerrecordwise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issuemovie.resx">
+      <DependentUpon>issuemovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movierecordwize.resx">
+      <DependentUpon>movierecordwize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movies.resx">
+      <DependentUpon>movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movieslist.resx">
+      <DependentUpon>movieslist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="moviesrental.resx">
+      <DependentUpon>moviesrental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rentedout.resx">
+      <DependentUpon>rentedout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="returnmovie.resx">
+      <DependentUpon>returnmovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="video_databaseDataSet.xsc">
+      <DependentUpon>video_databaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="video_databaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>video_databaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="video_databaseDataSet.xss">
+      <DependentUpon>video_databaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="video_databaseDataSet1.xsc">
+      <DependentUpon>video_databaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="video_databaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>video_databaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="video_databaseDataSet1.xss">
+      <DependentUpon>video_databaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="video_databaseDataSet2.xsc">
+      <DependentUpon>video_databaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="video_databaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>video_databaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="video_databaseDataSet2.xss">
+      <DependentUpon>video_databaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="video_databaseDS.xsc">
+      <DependentUpon>video_databaseDS.xsd</DependentUpon>
+    </None>
+    <None Include="video_databaseDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>video_databaseDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="video_databaseDS.xss">
+      <DependentUpon>video_databaseDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="video_database.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="video_database_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>video_database.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
